@@ -15,10 +15,11 @@ namespace WindowsFormsApp1
         private DateTime date = DateTime.Now;
 
         private Dictionary<String, int> spaceAvailable = new Dictionary<String, int>();
+        private String a_date = "";
         public Form1()
         {
             InitializeComponent();
-            String a_date = date.ToString("MM-dd-yyyy");
+            this.a_date = date.ToString("MM-dd-yyyy");
             this.spaceAvailable.Add(a_date, 20);
             this.lblSpaces.Text = "Lugares disponibles: " + spaceAvailable[a_date];
             ShowFilteredRows();
@@ -37,7 +38,6 @@ namespace WindowsFormsApp1
 
         private void agregar_Click(object sender, EventArgs e)
         {
-            String a_date = dateTimePicker1.Value.ToString("MM-dd-yyyy");
             if (spaceAvailable[a_date] > 0)
             {
                 int cmbSelected = this.cmbService.SelectedIndex;
@@ -52,6 +52,8 @@ namespace WindowsFormsApp1
                 }
                 Mascota mascota = new Mascota(
                     this.txtName.Text, this.txtRace.Text, Convert.ToInt32(this.txtAge.Text), service);
+                
+                mascotas.Add(mascota);
 
                 DataGridViewRow row = new DataGridViewRow();
                 row.CreateCells(this.dataGridView1);
@@ -59,11 +61,11 @@ namespace WindowsFormsApp1
                 row.Cells[1].Value = mascota.race;
                 row.Cells[2].Value = mascota.age;
                 row.Cells[3].Value = this.cmbService.SelectedItem;
-                row.Cells[4].Value = a_date;
+                row.Cells[4].Value = this.a_date;
 
                 this.dataGridView1.Rows.Insert(0,row);
-                spaceAvailable[a_date]--;
-                this.lblSpaces.Text = "Lugares disponibles: " + spaceAvailable[a_date];
+                spaceAvailable[this.a_date]--;
+                this.lblSpaces.Text = "Lugares disponibles: " + spaceAvailable[this.a_date];
                 CalculateProfits();
             }
             else
@@ -75,27 +77,25 @@ namespace WindowsFormsApp1
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            date = this.dateTimePicker1.Value;
-            String a_date = date.ToString("MM-dd-yyy");
+            this.a_date = dateTimePicker1.Value.ToString("MM-dd-yyyy");
             try
             {
-                spaceAvailable.Add(a_date, 20);
+                spaceAvailable.Add(this.a_date, 20);
             }
             catch (ArgumentException)
             {
-                
+              // En caso de existir la fecha en el diccionario no la agrega y pasa por aqui   
             }
+            this.lblSpaces.Text = "Lugares disponibles: " + spaceAvailable[this.a_date];
             ShowFilteredRows();
-            this.lblSpaces.Text = "Lugares disponibles: " + spaceAvailable[a_date];
             CalculateProfits();
         }
 
         void ShowFilteredRows()
         {
-            String date = this.dateTimePicker1.Value.ToString("MM-dd-yyyy");
             foreach (DataGridViewRow row in this.dataGridView1.Rows)
             {
-                if(row.Cells[4].Value.ToString() == date)
+                if(row.Cells[4].Value.ToString() == this.a_date)
                 {
                     row.Visible = true;
                 }
@@ -111,17 +111,11 @@ namespace WindowsFormsApp1
 
             foreach(DataGridViewRow row in this.dataGridView1.SelectedRows)
             {
-                try
-                {
-                    spaceAvailable[row.Cells[4].Value.ToString()]++;
-                    this.lblSpaces.Text = "Lugares disponibles: " + spaceAvailable[row.Cells[4].Value.ToString()];
-                    this.dataGridView1.Rows.RemoveAt(row.Index);
-                    CalculateProfits();
-                }
-                catch (ArgumentException)
-                {
-
-                }
+                spaceAvailable[row.Cells[4].Value.ToString()]++;
+                this.lblSpaces.Text = "Lugares disponibles: " + spaceAvailable[row.Cells[4].Value.ToString()];
+                this.dataGridView1.Rows.RemoveAt(row.Index);
+                CalculateProfits();
+                
             }
         }
 
