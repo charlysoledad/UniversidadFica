@@ -1,0 +1,16 @@
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\bin\Debug\net5.0\Diagnóstico.exe
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\bin\Debug\net5.0\Diagnóstico.deps.json
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\bin\Debug\net5.0\Diagnóstico.runtimeconfig.json
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\bin\Debug\net5.0\Diagnóstico.runtimeconfig.dev.json
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\bin\Debug\net5.0\Diagnóstico.dll
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\bin\Debug\net5.0\ref\Diagnóstico.dll
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\bin\Debug\net5.0\Diagnóstico.pdb
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\obj\Debug\net5.0\Diagnóstico.csproj.AssemblyReference.cache
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\obj\Debug\net5.0\Diagnóstico.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\obj\Debug\net5.0\Diagnóstico.AssemblyInfoInputs.cache
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\obj\Debug\net5.0\Diagnóstico.AssemblyInfo.cs
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\obj\Debug\net5.0\Diagnóstico.csproj.CoreCompileInputs.cache
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\obj\Debug\net5.0\Diagnóstico.dll
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\obj\Debug\net5.0\ref\Diagnóstico.dll
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\obj\Debug\net5.0\Diagnóstico.pdb
+D:\Documents\University\Third\Estructura de datos\Diagnóstico\obj\Debug\net5.0\Diagnóstico.genruntimeconfig.cache

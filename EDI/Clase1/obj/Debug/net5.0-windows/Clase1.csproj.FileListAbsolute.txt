@@ -1,0 +1,16 @@
+D:\Documents\University\Third\Estructura de datos\Clase1\bin\Debug\net5.0-windows\Clase1.exe
+D:\Documents\University\Third\Estructura de datos\Clase1\bin\Debug\net5.0-windows\Clase1.deps.json
+D:\Documents\University\Third\Estructura de datos\Clase1\bin\Debug\net5.0-windows\Clase1.runtimeconfig.json
+D:\Documents\University\Third\Estructura de datos\Clase1\bin\Debug\net5.0-windows\Clase1.runtimeconfig.dev.json
+D:\Documents\University\Third\Estructura de datos\Clase1\bin\Debug\net5.0-windows\Clase1.dll
+D:\Documents\University\Third\Estructura de datos\Clase1\bin\Debug\net5.0-windows\ref\Clase1.dll
+D:\Documents\University\Third\Estructura de datos\Clase1\bin\Debug\net5.0-windows\Clase1.pdb
+D:\Documents\University\Third\Estructura de datos\Clase1\obj\Debug\net5.0-windows\Clase1.csproj.AssemblyReference.cache
+D:\Documents\University\Third\Estructura de datos\Clase1\obj\Debug\net5.0-windows\Clase1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\University\Third\Estructura de datos\Clase1\obj\Debug\net5.0-windows\Clase1.AssemblyInfoInputs.cache
+D:\Documents\University\Third\Estructura de datos\Clase1\obj\Debug\net5.0-windows\Clase1.AssemblyInfo.cs
+D:\Documents\University\Third\Estructura de datos\Clase1\obj\Debug\net5.0-windows\Clase1.csproj.CoreCompileInputs.cache
+D:\Documents\University\Third\Estructura de datos\Clase1\obj\Debug\net5.0-windows\Clase1.dll
+D:\Documents\University\Third\Estructura de datos\Clase1\obj\Debug\net5.0-windows\ref\Clase1.dll
+D:\Documents\University\Third\Estructura de datos\Clase1\obj\Debug\net5.0-windows\Clase1.pdb
+D:\Documents\University\Third\Estructura de datos\Clase1\obj\Debug\net5.0-windows\Clase1.genruntimeconfig.cache
