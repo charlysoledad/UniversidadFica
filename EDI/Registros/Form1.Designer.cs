@@ -31,6 +31,13 @@ namespace WindowsFormsApp1
         {
             System.Windows.Forms.Label label5;
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblBaths = new System.Windows.Forms.Label();
+            this.lblHair = new System.Windows.Forms.Label();
+            this.lblVac = new System.Windows.Forms.Label();
+            this.lblProfits = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.lblSpaces = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Raza = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,13 +53,7 @@ namespace WindowsFormsApp1
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lblSpaces = new System.Windows.Forms.Label();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.lblProfits = new System.Windows.Forms.Label();
-            this.lblVac = new System.Windows.Forms.Label();
-            this.lblHair = new System.Windows.Forms.Label();
-            this.lblBaths = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -64,7 +65,7 @@ namespace WindowsFormsApp1
             | System.Windows.Forms.AnchorStyles.Right)));
             label5.AutoSize = true;
             label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label5.Location = new System.Drawing.Point(228, 9);
+            label5.Location = new System.Drawing.Point(236, 9);
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(184, 20);
             label5.TabIndex = 5;
@@ -73,6 +74,7 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.lblBaths);
             this.panel1.Controls.Add(this.lblHair);
             this.panel1.Controls.Add(this.lblVac);
@@ -96,6 +98,77 @@ namespace WindowsFormsApp1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(673, 514);
             this.panel1.TabIndex = 0;
+            // 
+            // lblBaths
+            // 
+            this.lblBaths.AutoSize = true;
+            this.lblBaths.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBaths.Location = new System.Drawing.Point(12, 415);
+            this.lblBaths.Name = "lblBaths";
+            this.lblBaths.Size = new System.Drawing.Size(55, 15);
+            this.lblBaths.TabIndex = 17;
+            this.lblBaths.Text = "Baños: 0";
+            // 
+            // lblHair
+            // 
+            this.lblHair.AutoSize = true;
+            this.lblHair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHair.Location = new System.Drawing.Point(12, 438);
+            this.lblHair.Name = "lblHair";
+            this.lblHair.Size = new System.Drawing.Size(99, 15);
+            this.lblHair.TabIndex = 16;
+            this.lblHair.Text = "Cortes de pelo: 0";
+            // 
+            // lblVac
+            // 
+            this.lblVac.AutoSize = true;
+            this.lblVac.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVac.Location = new System.Drawing.Point(12, 462);
+            this.lblVac.Name = "lblVac";
+            this.lblVac.Size = new System.Drawing.Size(67, 15);
+            this.lblVac.TabIndex = 15;
+            this.lblVac.Text = "Vacunas: 0";
+            // 
+            // lblProfits
+            // 
+            this.lblProfits.AutoSize = true;
+            this.lblProfits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfits.Location = new System.Drawing.Point(12, 489);
+            this.lblProfits.Name = "lblProfits";
+            this.lblProfits.Size = new System.Drawing.Size(137, 16);
+            this.lblProfits.TabIndex = 14;
+            this.lblProfits.Text = "Ganancias del día: $0";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDelete.Location = new System.Drawing.Point(585, 410);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 13;
+            this.btnDelete.Text = "Eliminar";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // lblSpaces
+            // 
+            this.lblSpaces.AutoSize = true;
+            this.lblSpaces.Location = new System.Drawing.Point(539, 132);
+            this.lblSpaces.Name = "lblSpaces";
+            this.lblSpaces.Size = new System.Drawing.Size(121, 13);
+            this.lblSpaces.TabIndex = 12;
+            this.lblSpaces.Text = "Lugares disponibles: 20 ";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 113);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 11;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dataGridView1
             // 
@@ -232,76 +305,16 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre:";
             // 
-            // dateTimePicker1
+            // linkLabel1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 113);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 11;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // lblSpaces
-            // 
-            this.lblSpaces.AutoSize = true;
-            this.lblSpaces.Location = new System.Drawing.Point(539, 132);
-            this.lblSpaces.Name = "lblSpaces";
-            this.lblSpaces.Size = new System.Drawing.Size(121, 13);
-            this.lblSpaces.TabIndex = 12;
-            this.lblSpaces.Text = "Lugares disponibles: 20 ";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDelete.Location = new System.Drawing.Point(585, 410);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 13;
-            this.btnDelete.Text = "Eliminar";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // lblProfits
-            // 
-            this.lblProfits.AutoSize = true;
-            this.lblProfits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfits.Location = new System.Drawing.Point(12, 489);
-            this.lblProfits.Name = "lblProfits";
-            this.lblProfits.Size = new System.Drawing.Size(137, 16);
-            this.lblProfits.TabIndex = 14;
-            this.lblProfits.Text = "Ganancias del día: $0";
-            // 
-            // lblVac
-            // 
-            this.lblVac.AutoSize = true;
-            this.lblVac.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVac.Location = new System.Drawing.Point(12, 462);
-            this.lblVac.Name = "lblVac";
-            this.lblVac.Size = new System.Drawing.Size(67, 15);
-            this.lblVac.TabIndex = 15;
-            this.lblVac.Text = "Vacunas: 0";
-            // 
-            // lblHair
-            // 
-            this.lblHair.AutoSize = true;
-            this.lblHair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHair.Location = new System.Drawing.Point(12, 438);
-            this.lblHair.Name = "lblHair";
-            this.lblHair.Size = new System.Drawing.Size(99, 15);
-            this.lblHair.TabIndex = 16;
-            this.lblHair.Text = "Cortes de pelo: 0";
-            // 
-            // lblBaths
-            // 
-            this.lblBaths.AutoSize = true;
-            this.lblBaths.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBaths.Location = new System.Drawing.Point(12, 415);
-            this.lblBaths.Name = "lblBaths";
-            this.lblBaths.Size = new System.Drawing.Size(55, 15);
-            this.lblBaths.TabIndex = 17;
-            this.lblBaths.Text = "Baños: 0";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(12, 9);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(73, 13);
+            this.linkLabel1.TabIndex = 18;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Código fuente";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Form1
             // 
@@ -344,6 +357,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label lblBaths;
         private System.Windows.Forms.Label lblHair;
         private System.Windows.Forms.Label lblVac;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

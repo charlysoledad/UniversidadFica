@@ -147,5 +147,17 @@ namespace WindowsFormsApp1
             this.lblVac.Text = "Vacunas: " + vacc;
             this.lblProfits.Text = "Ganancias del día: $"+profits;
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("https://github.com/charlysoledad/UniversidadFica/tree/main/EDI/Registros");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No es posible acceder al enlace.");
+            }
+        }
     }
 }

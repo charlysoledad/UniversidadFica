@@ -8,3 +8,13 @@ D:\Documents\University\Third\Estructura de datos\Registros\WindowsFormsApp1\obj
 D:\Documents\University\Third\Estructura de datos\Registros\WindowsFormsApp1\obj\Debug\Registros.csproj.CoreCompileInputs.cache
 D:\Documents\University\Third\Estructura de datos\Registros\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\Documents\University\Third\Estructura de datos\Registros\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Documents\University\UniversidadFica\EDI\Registros\bin\Debug\Registros.exe.config
+D:\Documents\University\UniversidadFica\EDI\Registros\bin\Debug\Registros.exe
+D:\Documents\University\UniversidadFica\EDI\Registros\bin\Debug\Registros.pdb
+D:\Documents\University\UniversidadFica\EDI\Registros\obj\Debug\Registros.csproj.AssemblyReference.cache
+D:\Documents\University\UniversidadFica\EDI\Registros\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Documents\University\UniversidadFica\EDI\Registros\obj\Debug\Registros.Properties.Resources.resources
+D:\Documents\University\UniversidadFica\EDI\Registros\obj\Debug\Registros.csproj.GenerateResource.cache
+D:\Documents\University\UniversidadFica\EDI\Registros\obj\Debug\Registros.csproj.CoreCompileInputs.cache
+D:\Documents\University\UniversidadFica\EDI\Registros\obj\Debug\Registros.exe
+D:\Documents\University\UniversidadFica\EDI\Registros\obj\Debug\Registros.pdb
